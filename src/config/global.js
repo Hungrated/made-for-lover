@@ -55,24 +55,14 @@ const config = (function(){
 		},
 		// type对应上面的color与font  若没有对应的 则默认为color1或font1
 		dialogue:[
-			{type:6, name:'男子', txt:'快过年了，我们去放烟花吧！'},
-			{type:2, name:'女子', txt:'天还这么亮，现在放烟花也不好看。'},
-			{type:2, name:'女子', txt:'再说你那有烟花吗？'},
-			{type:6, name:'男子', txt:'我当然有烟花啦。'},
-			{type:6, name:'男子', txt:'你那有打火机吗？'},
-			{type:2, name:'女子', txt:'没有呀～'},
-			{type:6, name:'男子', txt:'那你是怎么点燃我的心的？'},
-			{type:2, name:'女子', txt:'。。。'},
-			{type:2, name:'女子', txt:'可是我的心还没有被你点燃呀。'},
-			{type:6, name:'男子', txt:'别慌，我去买个打火机先。'},
-			{type:2, name:'女子', txt:'打火机可点不燃我的心。'},
-			{type:6, name:'男子', txt:'天快黑了，我要为你点燃整片天空。'},
+			{type:6, txt:'特殊的日子里，'},
+			{type:6, txt:'我们一起看烟花吧！'}
 		],
 		// 阶段二
-		sunset: 8000,   // 天黑时间
+		sunset: 3000,   // 天黑时间
 
 	    // 阶段三
-		fireworkInterval:[60, 240],// 烟花产生间隔 //---不建议改动
+		fireworkInterval:[60, 240],// 烟花产生间隔 不建议改动
 		//烟花的属性
 		fireworks:{
 			x: undefined,
@@ -87,15 +77,15 @@ const config = (function(){
 			wait: undefined,  //消失后 => 炸裂  等待时间
 			color: undefined,  //烟花颜色
 		},
-		fireWords:'你的眼睛|真好看|里面有|日月冬夏|晴雨山川|但是|我的眼睛|更好看|因为|里面有你',  // '|' 为分隔符
+		fireWords:'古念西子|今游钱塘|愿汝同襄|昔夏之长',  // '|' 为分隔符
 		// hue:210 lightness 0
 		skyColor:'hsla({hue}, 60%, {lightness}%, 0.2)',
 		fireOpt: {
-			wordInterval: 3000, //每段话出现的间隔时间
+			wordInterval: 5000, //每段话出现的间隔时间
 		},
 
 		//阶段四
-		titleWords:'一不小心|就和你|到了白头', // '|' 为分隔符
+		titleWords:'520|我们一起吧', // '|' 为分隔符
 		titleOpt:{
 			gap: 4,
 			size: 70,  //最后字的大小
@@ -104,8 +94,6 @@ const config = (function(){
 			distance: 120, //行间距
 			e: 5000 //速率
 		},
-
-
 
 		/*******均不建议改动********/
 		//字的参数
@@ -117,7 +105,6 @@ const config = (function(){
 			size: 70,
 			y: 120
 		},
-
 
 	}
 })();

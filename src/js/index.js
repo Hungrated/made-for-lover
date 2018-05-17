@@ -43,7 +43,7 @@ import TitleParticle from './TitleParticle'
 		}
 		initAudio(){
 			const audio = new Audio();
-			audio.src = require('../audio/1.mp3');
+			audio.src = require('../audio/bgm.mp3');
 			audio.loop = true;
 			audio.play();
 			audio.volume = 0.5;
