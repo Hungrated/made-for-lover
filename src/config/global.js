@@ -85,7 +85,7 @@ const config = (function(){
 		},
 
 		//阶段四
-		titleWords:'520|我们一起吧', // '|' 为分隔符
+		titleWords:'520|一起吧', // '|' 为分隔符
 		titleOpt:{
 			gap: 4,
 			size: 70,  //最后字的大小
