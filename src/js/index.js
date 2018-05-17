@@ -33,10 +33,13 @@ import TitleParticle from './TitleParticle'
 
 			//加载图片
 			ImgLoader.load(imgList).then(imgs => {
-				document.querySelector('#loading').style.display = 'none';
-				//bg
-				this.imgs = this.dealImgs(imgs);
-				this.init();
+				window.setTimeout(() => {
+          document.querySelector('#loading').style.display = 'none';
+          //bg
+          this.imgs = this.dealImgs(imgs);
+          this.init();
+        }, 1000);
+
 			}).catch(err => {
 				console.log(err);
 			});
